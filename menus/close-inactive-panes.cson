@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Toggle close-inactive-panes'
+      'command': 'close-inactive-panes:close'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'close-inactive-panes'
+      'submenu': [
+        {
+          'label': 'Toggle'
+          'command': 'close-inactive-panes:close'
+        }
+      ]
+    ]
+  }
+]
